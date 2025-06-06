@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,37 +8,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <div class="background-gif"></div>
+  <div class="grain-overlay"></div>
+
+  <div class="lang-switcher">
+    <button data-lang="ru" class="active">Рус</button>
+    <button data-lang="uk">Укр</button>
+    <button data-lang="en">Eng</button>
+  </div>
+
+  <button id="music-toggle" title="Включить/выключить музыку">🎵</button>
+
   <nav class="navbar">
-    <a href="#about">О игре</a>
-    <a href="#screenshots">Скриншоты</a>
-    <a href="#trailer">Трейлер</a>
+    <a href="#about" data-lang-text="about-link">О игре</a>
+    <a href="#screenshots" data-lang-text="screenshots-link">Скриншоты</a>
+    <a href="#trailer" data-lang-text="trailer-link">Трейлер</a>
   </nav>
 
   <header class="hero">
-    <h1>S.T.A.L.K.E.R. 2: Heart of Chornobyl</h1>
-    <p class="tagline">Погрузись в Зону отчуждения. Скоро.</p>
-    <a href="#trailer" class="btn">Смотреть трейлер</a>
+    <h1 data-lang-text="hero-title">S.T.A.L.K.E.R. 2: Heart of Chornobyl</h1>
+    <p class="tagline" data-lang-text="hero-tagline">
+      Погрузись в <span class="highlight-word">Зону отчуждения</span>. Скоро.
+    </p>
+    <a href="#trailer" class="btn" data-lang-text="hero-btn">Смотреть трейлер</a>
   </header>
 
-  <section id="about" class="about fade-in">
-    <h2>О игре</h2>
-    <p>
+  <section id="about" class="about fade-in parallax-section">
+    <h2 data-lang-text="about-title">О игре</h2>
+    <p data-lang-text="about-text">
       S.T.A.L.K.E.R. 2 — продолжение культовой серии от GSC Game World. Исследуй
-      открытую Зону, полную аномалий, врагов и загадок. Уникальный геймплей,
-      атмосферная графика и глубокий сюжет ждут тебя.
+      открытую <span class="highlight-word">Зону</span>, полную аномалий, врагов и загадок.
+      Уникальный <span class="highlight-word">геймплей</span>, атмосферная графика и глубокий сюжет ждут тебя.
     </p>
   </section>
 
-  <section id="screenshots" class="screenshots fade-in">
-    <h2>Скриншоты</h2>
+  <section id="screenshots" class="screenshots fade-in parallax-section">
+    <h2 data-lang-text="screenshots-title">Скриншоты</h2>
     <div class="gallery">
       <img src="css/img/images.jpg" alt="Скриншот 1" />
       <img src="css/img/stalker-pripyat-cheeki-breeki-ukraine-chernobyl-stalker-hd-wallpaper-preview.jpg" alt="Скриншот 2" />
+      <img src="img/road-train-depot-stalker-wallpaper-preview.jpg" alt="Скриншот 3" />
+      <img src="img/stalker-soldier-by-a-marsh-2b6lm26pbsqpls0f.jpg" alt="Скриншот 4" />
+      <img src="img/1283810-1920x1080-desktop-full-hd-stalker-2-background-image.jpg" alt="Скриншот 5" />
+      <img src="img/Без названия.jpg" alt="Скриншот 6" />
     </div>
   </section>
 
-  <section id="trailer" class="trailer fade-in">
-    <h2>Официальные трейлеры</h2>
+  <section id="trailer" class="trailer fade-in parallax-section">
+    <h2 data-lang-text="trailer-title">Официальные трейлеры</h2>
 
     <div class="video-container">
       <video
@@ -49,7 +66,7 @@
         controls
         poster="img/thumb-1920-531590.jpg"
       >
-      <source src="css/img/video/S.T.A.L.K.E.R. 2_ Heart of Chernobyl — Gameplay Trailer (1).mp4" type="video/mp4" />
+        <source src="css/img/video/S.T.A.L.K.E.R. 2_ Heart of Chernobyl — Gameplay Trailer (1).mp4" type="video/mp4" />
         Ваш браузер не поддерживает видео.
       </video>
     </div>
@@ -80,6 +97,8 @@
   <footer>
     <p>&copy; 2025 | Фан-сайт. Все права на игру принадлежат GSC Game World.</p>
   </footer>
+
+  <audio id="background-music" loop preload="auto" src="audio/iz_moda_stalker_zov_pripjati_zveroboj_-_getara_(z3.fm).mp3"></audio>
 
   <script src="script.js"></script>
 </body>
