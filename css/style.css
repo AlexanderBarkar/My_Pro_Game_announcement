@@ -1,0 +1,43 @@
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+header.hero {
+  margin-bottom: 30px;
+}
+.gallery img, video {
+  width: 300px;
+  margin: 10px;
+  border: 2px solid #444;
+  border-radius: 5px;
+}
+.navbar a {
+  margin: 0 10px;
+  color: #bada55;
+  text-decoration: none;
+}
+.btn {
+  background-color: #bada55;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.video-buttons {
+  margin-top: 15px;
+}
+.video-select {
+  background-color: #222;
+  color: #bada55;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.video-select:hover {
+  background-color: #333;
+}

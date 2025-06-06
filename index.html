@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S.T.A.L.K.E.R. 2 — Анонс</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#about">О игре</a>
+    <a href="#screenshots">Скриншоты</a>
+    <a href="#trailer">Трейлер</a>
+  </nav>
+
+  <header class="hero">
+    <h1>S.T.A.L.K.E.R. 2: Heart of Chornobyl</h1>
+    <p class="tagline">Погрузись в Зону отчуждения. Скоро.</p>
+    <a href="#trailer" class="btn">Смотреть трейлер</a>
+  </header>
+
+  <section id="about" class="about fade-in">
+    <h2>О игре</h2>
+    <p>
+      S.T.A.L.K.E.R. 2 — продолжение культовой серии от GSC Game World. Исследуй
+      открытую Зону, полную аномалий, врагов и загадок. Уникальный геймплей,
+      атмосферная графика и глубокий сюжет ждут тебя.
+    </p>
+  </section>
+
+  <section id="screenshots" class="screenshots fade-in">
+    <h2>Скриншоты</h2>
+    <div class="gallery">
+      <img src="https://images.wallpapersden.com/image/download/stalker-pripyat-art_ZmZuaWyUmZqaraWkpJRmbmdlrWZmaWw.jpg" alt="Скриншот 1" />
+      <img src="https://images5.alphacoders.com/531/thumb-1920-531590.jpg" alt="Скриншот 2" />
+    </div>
+  </section>
+
+  <section id="trailer" class="trailer fade-in">
+    <h2>Официальные трейлеры</h2>
+
+    <div class="video-container">
+      <video
+        id="trailer-video"
+        muted
+        loop
+        playsinline
+        controls
+        poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTdrXE_pzhvywARoZDgwYrJtRMTQbxNaXoGA&s"
+      >
+        <source src="video/stalker2-trailer.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+      </video>
+    </div>
+
+    <div class="video-description">
+      <p id="video-text">Трейлер №1 — Анонс S.T.A.L.K.E.R. 2</p>
+      <div class="video-buttons">
+        <button
+          class="video-select"
+          data-video="C:\Users\Legion\Videos\S.T.A.L.K.E.R. 2_ Heart of Chernobyl — Gameplay Trailer (1).mp4"
+          data-poster="img/preview1.jpg"
+          data-text="Трейлер №1 — Анонс S.T.A.L.K.E.R. 2"
+        >
+          Трейлер 1
+        </button>
+        <button
+          class="video-select"
+          data-video="C:\Users\Legion\Videos\videoplayback.mp4"
+          data-poster="img/preview2.jpg"
+          data-text="Трейлер №2 — Геймплейный показ 2024"
+        >
+          Трейлер 2
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 | Фан-сайт. Все права на игру принадлежат GSC Game World.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
